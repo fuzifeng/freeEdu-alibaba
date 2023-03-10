@@ -1,0 +1,32 @@
+server:
+  port: 8801
+
+spring:
+  application:
+    name: freeEdu-alibaba-comsumer
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: fec9e7c0-7312-4685-87d5-62b667d45fc9
+
+    sentinel:
+#      datasource:
+#        flow-rule:
+#          nacos:
+#            server-addr: localhost:8848
+#            data-id: ${spring.application.name}-flow-rules
+#            group-id: SENTINEL_GROUP
+#            rule-type: flow
+#            namespace: public
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+        heartbeat-interval-ms: 500
+        eager: true
+      enabled: true
+
+#以下配置信息并不是默认配置，而是我们自定义的配置，目的是不在 Controller 内硬编码服务提供者的服务名
+service-url:
+  nacos-provider-service: http://freeEdu-alibaba-provider #服务提供者的服务名

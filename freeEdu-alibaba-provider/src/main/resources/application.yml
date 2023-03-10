@@ -1,0 +1,25 @@
+#server:
+#  port: 8002
+
+spring:
+  profiles:
+    active: dev #激活 dev 的配置
+
+#  application:
+#    name: freeEdu-alibaba-provider
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 127.0.0.1:8848
+#        group: dev
+        #指定文件名，没有则默认${spring.application.name}
+#        file-extension: yml
+#        namespace: fec9e7c0-7312-4685-87d5-62b667d45fc9
+#      discovery:
+#        server-addr: localhost:8848
+#  config:
+#    import:
+#      - optional:nacos:${spring.application.name}:${spring.cloud.nacos.config.file-extension}
+
+#own:
+#  text: hello
