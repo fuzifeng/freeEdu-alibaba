@@ -4,10 +4,43 @@ server:
 spring:
   application:
     name: freeEdu-config
+
   cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+      datasource:
+        flow:
+          nacos:
+            server-addr: localhost:8848
+            data-id: ${spring.application.name}-flow-rules
+            group-id: SENTINEL_GROUP
+            data-type: json
+            rule-type: flow
+
+
+    #        clientIp: 192.168.30.57
+
     nacos:
       discovery:
         server-addr: localhost:8848 #Nacos服务注册中心地址
       config:
         server-addr: localhost:8848 #Nacos作为配置中心地址
         file-extension: yaml #指定yaml格式的配置
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+seata:
+  config:
+    nacos:
+      server-addr: localhost:8848
+      namespace: "8c237ba2-213c-4fc6-8773-487fa26fd7d7"
+      group-id: SEATA_GROUP
+      username: "nacos"   #Nacos 配置中心的用于名
+      password: "nacos"  #Nacos 配置中心的密码
+    type: nacos

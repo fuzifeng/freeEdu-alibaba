@@ -8,6 +8,7 @@
         <module>freeEdu-alibaba-provider</module>
         <module>freeEdu-alibaba-consumer</module>
         <module>freeEdu-alibaba-config-server</module>
+        <module>freeEdu-alibaba-common</module>
     </modules>
 
     <parent>

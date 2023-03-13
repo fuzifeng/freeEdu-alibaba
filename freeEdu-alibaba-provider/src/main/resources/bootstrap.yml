@@ -14,3 +14,13 @@ spring:
 
       discovery:
         server-addr: localhost:8848
+
+seata:
+  tx-service-group: his_tx_group
+  config:
+    type: file
+    file:
+      name: file.conf
+  service:
+    vgroup-mapping:
+      his_tx_group:

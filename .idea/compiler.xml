@@ -10,12 +10,14 @@
         <module name="freeEdu-alibaba-config-server" />
         <module name="freeEdu-alibaba-provider" />
         <module name="freeEdu-alibaba-consumer" />
+        <module name="freeEdu-alibaba-common" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="freeEdu-alibaba" options="-parameters" />
+      <module name="freeEdu-alibaba-common" options="-parameters" />
       <module name="freeEdu-alibaba-config-server" options="-parameters" />
       <module name="freeEdu-alibaba-consumer" options="-parameters" />
       <module name="freeEdu-alibaba-provider" options="-parameters" />

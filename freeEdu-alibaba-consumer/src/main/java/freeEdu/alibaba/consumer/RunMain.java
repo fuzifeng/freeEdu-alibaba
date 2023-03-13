@@ -12,12 +12,12 @@ public class RunMain {
 
     public static void main(String[] args) {
 
-        ConfigurableApplicationContext context = SpringApplication.run(RunMain.class, args);
-        System.setProperty("project.name",
-                context.getEnvironment().getProperty("spring.application.name", "freeEdu-alibaba-comsumer"));
-        System.setProperty("csp.sentinel.dashboard.server",
-                context.getEnvironment().getProperty("sentinel.dashboard.server", "localhost:8888"));
-        InitExecutor.doInit();
-//        SpringApplication.run(RunMain.class, args);
+//        ConfigurableApplicationContext context = SpringApplication.run(RunMain.class, args);
+//        System.setProperty("project.name",
+//                context.getEnvironment().getProperty("spring.application.name", "freeEdu-alibaba-comsumer"));
+//        System.setProperty("csp.sentinel.dashboard.server",
+//                context.getEnvironment().getProperty("sentinel.dashboard.server", "localhost:8080"));
+//        InitExecutor.doInit();
+        SpringApplication.run(RunMain.class, args);
     }
 }

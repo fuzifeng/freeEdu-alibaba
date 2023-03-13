@@ -18,10 +18,20 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.freeEdu.alibaba</groupId>
+            <artifactId>freeEdu-alibaba-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--SpringCloud2020及以后的版本默认不启用 bootstrap 配置，我们需要在pom里面显式地引入：-->
+        &lt;!&ndash;SpringCloud2020及以后的版本默认不启用 bootstrap 配置，我们需要在pom里面显式地引入：&ndash;&gt;
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bootstrap</artifactId>
@@ -42,21 +52,21 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!--Spring Cloud Alibaba Config 依赖-->
+        &lt;!&ndash;Spring Cloud Alibaba Config 依赖&ndash;&gt;
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
-        <!--SpringCloud ailibaba nacos 服务注册与发现模块 -->
+        &lt;!&ndash;SpringCloud ailibaba nacos 服务注册与发现模块 &ndash;&gt;
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        <!--Spring Boot 监控模块-->
+        &lt;!&ndash;Spring Boot 监控模块&ndash;&gt;
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
     <build>
